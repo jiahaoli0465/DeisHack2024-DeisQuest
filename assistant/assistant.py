@@ -13,7 +13,7 @@ openai.api_key = os.environ.get("OPENAI_API_KEY")
 client = openai.Client(api_key=openai.api_key)
 
 # use an Assistant
-assistant_id = 'asst_TPmdUIPcSwHxhMLGnHCY9Zdg'
+assistant_id = 'asst_3D89yq6Q1Vmi2vGklhQL5os4'
 
 
 def new_thread():
