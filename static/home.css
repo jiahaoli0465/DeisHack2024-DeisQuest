@@ -1,0 +1,52 @@
+.pageHome {
+    width: 100vw;
+
+    height: calc(100vh - 50px);  
+    display: flex;
+
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-between;
+    /* transform: translateY(50px); */
+}
+
+.section {
+    width: 400px;
+    height: 100%;
+}
+#leftSection {
+
+    background-color: #82ae59;
+    display: flex;
+    flex-direction: column;
+
+}
+#middleSection {
+
+
+    width: 500px !important;
+
+    background-color: #5d59ae;
+
+}
+#rightSection {
+
+
+
+    background-color: #ae5959;
+
+}
+
+
+#activeTask {
+    width: 350px;
+    height: 45%;
+    background-color: #59aea7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-inline: auto ;
+
+}

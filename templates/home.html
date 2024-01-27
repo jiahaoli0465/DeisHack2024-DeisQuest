@@ -2,15 +2,39 @@
 {% block content %}
 
 
-    <div class="page">
-        <h1>Home????</h1>
+    <div class="pageHome">
+        <div class="section" id="leftSection">
+            <div id="activeTask"></div>
+        </div>
+
+        <div class="section"  id="middleSection">
+        </div>
+        <div class="section"  id="rightSection">
+        </div>
+
+        <!-- <div class="taskContainer">
+
+
+        </div> -->
+
+
+
+
+
+
+
+        <!-- <h1>Home????</h1>
         {% if current_user.is_authenticated %}
         Hi {{ current_user.username }}!
-        {% endif %}
-        <!-- {% for user in users %}
-            <p>{{user.username}}</p>
-        {% endfor %} -->
-        <a href="/form">go to form</a>
+        {% endif %} -->
+
+
     </div>
 
+
 {% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="/static/home.css">
+{% endblock %}
+
