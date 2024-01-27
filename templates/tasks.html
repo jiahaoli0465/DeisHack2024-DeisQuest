@@ -1,13 +1,13 @@
 {% extends 'base_copy.html' %}
 {% block content %}
 
-                <h1 class="mt-4">Your Tasks</h1>
-                <ol class="breadcrumb mb-4">
+                <h1 class="mt-4">Your Quests</h1>
+                <!-- <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item"><a href="\">Dashboard</a></li>
                         <li class="breadcrumb-item active">Your Tasks</li>
-                    </ol>
+                    </ol> -->
                     
-                    <div style="display:flex">
+                    <!-- <div style="display:flex"> -->
 
                         <div style="flex:1; padding-right:10px">
 
@@ -17,39 +17,53 @@
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
+                                    
                                 </div>
-                                <div class="card bg-warning text-white mb-4">
+                                <!-- <div class="card bg-warning text-white mb-4">
                                     <div class="card-body">Task Due Soon</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
-                                </div>
+                                </div> -->
+                        </div>
+                        <div class="card bg-warning text-white mb-4">
+                            <div class="card-body">Task Due Soon</div>
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                <a class="small text-white stretched-link" href="#">View Details</a>
+                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                            </div>
                         </div>
 
 
-                        <div class="card mb-4" style="flex:1">
+                        <!-- <div class="card mb-4" style="flex:1">
                             <div class="card-body">
                                 <h1>Completed</h1>
-
+                            </div>
+                        </div> -->
+                    <!-- </div> -->
+                    <div style="display: flex;">
+                        <div class="card mb-4" style="flex: 1;  margin-right: 10px;">
+                            <div class="card-body">
+                                <h1>Completed Quests</h1>
+                                <ul>
+                                    <li>Apply to 50 Internships</li>
+                                    <li>Attend IBS Linkedin Profile Creation event</li>
+                                    <li>Attend networking workshop</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="card mb-4" style="flex: 1;  margin-right: 10px;">
+                            <div class="card-body">
+                                <h1>Recommended Quests</h1>
+                                <ul>
+                                    <li>Attend Professor Smith's colloqium at the IBS on January 30th 2024 from 6-7pm</li>
+                                    <li>Attend IBS Resume Review Workshop at the IBS on January 31st 2024 from 6-7pm </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-
-                            <div class="card mb-4">
-                                <div class="card-body">
-                                    <h1>Upcoming/Recommended Tasks</h1>
-    
-                                    This page is an example of using the light side navigation option. By appending the
-                                    <code>.sb-sidenav-light</code>
-                                    class to the
-                                    <code>.sb-sidenav</code>
-                                    class, the side navigation will take on a light color scheme. The
-                                    <code>.sb-sidenav-dark</code>
-                                    is also available for a darker option.
-                                </div>
-                            </div>
-
 
 
 {% endblock %}
