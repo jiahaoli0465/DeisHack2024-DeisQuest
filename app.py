@@ -1,7 +1,12 @@
 import os
 import openai
 
+
 from flask import Flask, render_template, request, flash, redirect, session, g, url_for, jsonify
+app = Flask(__name__)
+
+app.app_context().push()
+
 from flask_debugtoolbar import DebugToolbarExtension
 from sqlalchemy.exc import IntegrityError
 from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
@@ -9,10 +14,10 @@ from flask_login import UserMixin, login_user, LoginManager, login_required, log
 from forms import RegisterForm, LoginForm, EditWorkLog, NewExercise, NewWorkLog,NewWorkType
 from models import db, connect_db, User, Worklog, WorkoutType, Exercise, ExerciseSet, WorkoutExercise
 
-from assistant.assistant import assistantbot, client
+# from assistant.assistant import assistantbot, client
 
-app = Flask(__name__)
-app.register_blueprint(assistantbot)
+
+# app.register_blueprint(assistantbot)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = (
     os.environ.get('DATABASE_URL', 'postgresql:///IBSquest'))
@@ -36,14 +41,18 @@ login_manager.login_view = 'login'
 @app.route('/')
 def show_home():
     users = User.query.all()
-    if 'thread_id' not in session:
-        thread = client.beta.threads.create()
-        session['thread_id'] = thread.id
+    # if 'thread_id' not in session:
+        # thread = client.beta.threads.create()
+        # session['thread_id'] = thread.id
     return render_template('home.html', users = users)
 
 @app.route('/quests')
 def quest_page():
     return render_template('tasks.html')
+
+@app.route('/rewards')
+def rewards_page():
+    return render_template('rewards.html')
 
 @app.route('/rankings')
 def rankings_page():
