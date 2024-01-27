@@ -16,7 +16,11 @@ from models import db, connect_db, User, Worklog, WorkoutType, Exercise, Exercis
 
 # from assistant.assistant import assistantbot, client
 
+<<<<<<< Updated upstream
 
+=======
+app = Flask(__name__)
+>>>>>>> Stashed changes
 # app.register_blueprint(assistantbot)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = (

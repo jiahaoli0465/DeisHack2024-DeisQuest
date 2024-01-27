@@ -6,6 +6,9 @@
 {% endblock %}
 
     <div id="userForms">
+        <!-- {% for mesg in get_flashed_messages() %}
+            <p>{{ mesg }}</p>
+        {% endfor %} -->
         <div class="ss"> 
             <form method="POST" class="sign-up-form">
                 <h2 class="title">Create Account</h2>
@@ -47,7 +50,7 @@
                 </div>
             
                 <!-- Submit Button -->
-                <input type="submit" value="Sign up" class="btn">
+                <input type="submit" value="Sign up" class="login-btn">
             
                 <!-- Additional Links or Text -->
                 <p>Already have an account? <a href="/login" class="account-text" id="sign-in-link">Sign in</a></p>
