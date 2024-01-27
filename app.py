@@ -15,8 +15,6 @@ from forms import RegisterForm, LoginForm, EditWorkLog, NewExercise, NewWorkLog,
 from models import db, connect_db, User, Worklog, WorkoutType, Exercise, ExerciseSet, WorkoutExercise
 
 # from assistant.assistant import assistantbot, client
-
-
 # app.register_blueprint(assistantbot)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = (
@@ -39,6 +37,7 @@ login_manager.init_app(app)
 login_manager.login_view = 'login'
 
 @app.route('/')
+@login_required
 def show_home():
     users = User.query.all()
     # if 'thread_id' not in session:
@@ -47,18 +46,22 @@ def show_home():
     return render_template('home.html', users = users)
 
 @app.route('/quests')
+@login_required
 def quest_page():
     return render_template('tasks.html')
 
 @app.route('/rewards')
+@login_required
 def rewards_page():
     return render_template('rewards.html')
 
 @app.route('/rankings')
+@login_required
 def rankings_page():
     return render_template('ranking.html')
 
 @app.route('/newsletter')
+@login_required
 def newsletter_page():
     return render_template('newsletter.html')
 
