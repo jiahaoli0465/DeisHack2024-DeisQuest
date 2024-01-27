@@ -1,0 +1,64 @@
+{% extends 'base_copy.html' %}
+
+{% block head %}
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+
+<main>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Rankings</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+            <li class="breadcrumb-item active">Rankings</li>
+        </ol>
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                Student Rankings
+            </div>
+            <div class="card-body">
+                <table id="rankingsTable" class="table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Student Name</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Alex Johnson</td>
+                            <td>95</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Emma Stone</td>
+                            <td>92</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Michael Brown</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Sarah Wilson</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Kevin Martinez</td>
+                            <td>83</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

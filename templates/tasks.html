@@ -1,0 +1,59 @@
+{% extends 'base_copy.html' %}
+{% block content %}
+
+                <h1 class="mt-4">Your Tasks</h1>
+                <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a href="\">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Your Tasks</li>
+                    </ol>
+                    
+                    <div style="display:flex">
+
+                        <div style="flex:1; padding-right:10px">
+
+                                <div class="card bg-primary text-white mb-4">
+                                    <div class="card-body">View Your Current Task</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="card bg-warning text-white mb-4">
+                                    <div class="card-body">Task Due Soon</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                        </div>
+
+
+                        <div class="card mb-4" style="flex:1">
+                            <div class="card-body">
+                                <h1>Completed</h1>
+
+                            </div>
+                        </div>
+                    </div>
+
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h1>Upcoming/Recommended Tasks</h1>
+    
+                                    This page is an example of using the light side navigation option. By appending the
+                                    <code>.sb-sidenav-light</code>
+                                    class to the
+                                    <code>.sb-sidenav</code>
+                                    class, the side navigation will take on a light color scheme. The
+                                    <code>.sb-sidenav-dark</code>
+                                    is also available for a darker option.
+                                </div>
+                            </div>
+
+
+
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+

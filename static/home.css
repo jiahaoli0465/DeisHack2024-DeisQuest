@@ -1,11 +1,10 @@
 .pageHome {
     width: 100vw;
 
-    height: calc(100vh - 50px);  
+    height: 100vh;  
     display: flex;
 
     flex-direction: row;
-    margin-top: 50px;
     justify-content: space-between;
     /* transform: translateY(50px); */
 }
