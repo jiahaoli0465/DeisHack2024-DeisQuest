@@ -9,8 +9,7 @@ assistantbot = Blueprint('assistantbot', __name__,
                         template_folder='templates')
 
 # Initialize the OpenAI client
-# openai.api_key = os.environ.get("OPENAI_API_KEY")
-openai.api_key = "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"
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 client = openai.Client(api_key=openai.api_key)
 
 # use an Assistant

@@ -1,9 +1,10 @@
-{% extends 'base.html' %}
+{% extends 'logout_base.html' %}
 {% block content %}
 
+{% block head %}
 <link rel="stylesheet" href="/static/users/userForm.css">
+{% endblock %}
 
-<div class="page">
     <div id="userForms">
         <div class="ss"> 
             <form method="POST" class="sign-up-form">
@@ -54,10 +55,6 @@
             
         </div>
     </div>
-
-
-
-</div>
 
 
 

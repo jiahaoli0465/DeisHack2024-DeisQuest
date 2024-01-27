@@ -1,11 +1,11 @@
-{% extends 'base.html' %}
+{% extends 'logout_base.html' %}
 {% block head %}
 <link rel="stylesheet" href="/static/users/userForm.css">
 {% endblock %}
 {% block content %}
 
 
-<div class="page">
+
     <div id="userForms">
         <div class="ss"> 
             <form method="POST" class="sign-up-form">
@@ -37,7 +37,7 @@
                 </div>
             
                 <!-- Submit Button -->
-                <input type="submit" value="Sign up" class="btn">
+                <input type="submit" value="Sign up" class="login-btn">
             
                 <!-- Additional Links or Text -->
                 <p>Don't have an account? <a href="/register" class="account-text" id="sign-in-link">Sign up</a></p>
@@ -48,7 +48,6 @@
 
 
 
-</div>
 
 
 

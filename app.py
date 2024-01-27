@@ -41,8 +41,8 @@ def show_home():
         session['thread_id'] = thread.id
     return render_template('home.html', users = users)
 
-@app.route('/tasks')
-def task_page():
+@app.route('/quests')
+def quest_page():
     return render_template('tasks.html')
 
 @app.route('/rankings')
