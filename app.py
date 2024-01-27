@@ -15,7 +15,7 @@ app = Flask(__name__)
 app.register_blueprint(assistantbot)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = (
-    os.environ.get('DATABASE_URL', 'postgresql:///pulse'))
+    os.environ.get('DATABASE_URL', 'postgresql:///IBSquest'))
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_ECHO'] = False
@@ -36,6 +36,9 @@ login_manager.login_view = 'login'
 @app.route('/')
 def show_home():
     users = User.query.all()
+    if 'thread_id' not in session:
+        thread = client.beta.threads.create()
+        session['thread_id'] = thread.id
     return render_template('home.html', users = users)
 
 @app.route('/form')
