@@ -17,11 +17,18 @@
                     </div>
                     <div class="card-body">
                         <span>
-                            <ul> 
-                                <li><a href="/task">a,ksdjhalksdjh</a></li>
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="/task" class="list-group-link custom-link">Apply to 25 internships (weekly) (3 pt)</a></li>
+                                <li class="list-group-item"><a href="/task" class="list-group-link custom-link">Attend Asper Center Pitch Summit (3/8/2024) (1 pt)</a></li>
+                                <li class="list-group-item"><a href="/event" class="list-group-link custom-link">Guest Speaker Series: International Business Trends (3/15/2024) (1 pt)</a></li>
+                                <li class="list-group-item"><a href="/event" class="list-group-link custom-link">Networking Event: Alumni Mixer (4/2/2024) (1 pt)</a></li>
+                                <li class="list-group-item"><a href="/event" class="list-group-link custom-link">Case Competition: Global Strategy Challenge (4/20/2024) (1 pt)</a></li>
                             </ul>
                         </span>
-
+                        
+                    </div>
+                    <div class="card-body">
+                        <canvas id="myAreaChart" width="100%" height="40"></canvas> 
                     </div>
                 </div>
             </div>
@@ -29,9 +36,90 @@
                 <div class="card mb-4">
                     <div class="card-header">
                         <i class="fas fa-chart-area me-1"></i>
-                        Area Chart Example
+                        Current Rank
                     </div>
-                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="mb-3">Rank</h5>
+                                <h2 class="display-5">219</h2>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="mb-3">Points</h5>
+                                <h2 class="display-5">83</h2>
+                            </div>
+                        </div>
+
+
+
+                        <table id="rankingsTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Student Name</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>215</td>
+                        <td>Alex Johnson</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>216</td>
+                        <td>Emma Stone</td>
+                        <td>92</td>
+                    </tr>
+                    <tr>
+                        <td>217</td>
+                        <td>Michael Brown</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>218</td>
+                        <td>Sarah Wilson</td>
+                        <td>85</td>
+                    </tr>
+                    <tr class="highlighted-row" style="background-color: #f0f8ff;">
+                        <td>219</td>
+                        <td>Jiahao</td>
+                        <td>83</td>
+                    </tr>
+                    <tr>
+                        <td>220</td>
+                        <td>Olivia Davis</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>221</td>
+                        <td>William Thompson</td>
+                        <td>78</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                    <tr>
+                        <td>222</td>
+                        <td>John Smith</td>
+                        <td>75</td>
+                    </tr>
+                    <tr>
+                        <td>223</td>
+                        <td>Emily Johnson</td>
+                        <td>72</td>
+                    </tr>
+                    <tr>
+                        <td>224</td>
+                        <td>James Gordon</td>
+                        <td>70</td>
+                    </tr>
+                    </tbody>
+                    </table>
+
+
+
+
+                        <!-- <canvas id="myAreaChart" width="100%" height="40"></canvas> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,71 +163,13 @@
                 </div>
             </div>
         </div>
-        <div class="card mb-4">
+        <!-- <div class="card mb-4">
             <div class="card-header">
                 <i class="fas fa-chart-bar me-1"></i>
                 Rankings
             </div>
-            <div class="card-body">
-                <table id="rankingsTable" class="table">
-                <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th>Student Name</th>
-                        <th>Points</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Alex Johnson</td>
-                        <td>95</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Emma Stone</td>
-                        <td>92</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Michael Brown</td>
-                        <td>88</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Sarah Wilson</td>
-                        <td>85</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Kevin Martinez</td>
-                        <td>83</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Olivia Davis</td>
-                        <td>80</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>William Thompson</td>
-                        <td>78</td>
-                    </tr>
-                    <!-- Add more rows as needed -->
-                    <tr>
-                        <td>8</td>
-                        <td>John Smith</td>
-                        <td>75</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Emily Johnson</td>
-                        <td>72</td>
-                    </tr>
-                    </tbody>
-                    </table>
-                </div>
-        </div>
+
+        </div> -->
 
         <!-- <div class="section" id="leftSection">
             <div id="activeTask"></div>

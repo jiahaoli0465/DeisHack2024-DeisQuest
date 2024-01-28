@@ -14,8 +14,8 @@ from flask_login import UserMixin, login_user, LoginManager, login_required, log
 from forms import RegisterForm, LoginForm
 from models import db, connect_db, User
 
-# from assistant.assistant import assistantbot, client
-# app.register_blueprint(assistantbot)
+from assistant.assistant import assistantbot, client
+app.register_blueprint(assistantbot)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = (
     os.environ.get('DATABASE_URL', 'postgresql:///IBSquest'))
@@ -36,14 +36,20 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 @login_required
 def show_home():
     users = User.query.all()
-    # if 'thread_id' not in session:
-        # thread = client.beta.threads.create()
-        # session['thread_id'] = thread.id
+    if 'thread_id' not in session:
+        thread = client.beta.threads.create()
+        session['thread_id'] = thread.id
     return render_template('home.html', users = users)
+
+@app.route('/showflash', methods=['POST'])
+def show_flash():
+    flash("Task Submitted! Your task is under review, we will let you know when they are added to your profile.", "success")
+    return redirect('/')
+
 
 @app.route('/quests')
 @login_required

@@ -1,25 +1,37 @@
 {% extends 'base_copy.html' %}
 {% block content %}
+    <h1 class="mt-4">Task</h1>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-chart-area me-1"></i>
+            Internship Quest: (3 points)
+        </div>
+        <div class="card-body">
+            Required: Apply to 25 internships per week
+        </div>
 
-                <h1 class="mt-4">Task</h1>
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <i class="fas fa-chart-area me-1"></i>
-                        Task TItle
-                    </div>
-                    <div class="card-body">Task Desc</div>
 
-                    <form>
-                        <input type="file"></input>
-                        <button type="submit">le button</button>
-                    </form>
-
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fa-solid fa-upload"></i>
+            Upload your list of internships applied to:
+        </div>
+        <div class="card-body">
+            <form action="/showflash" method="post">
+                <div class="mb-3 ">
+                    <!-- <label for="fileInput" class="form-label">Upload your list of internships applied to:</label> -->
+                    <input type="file" class="form-control" id="fileInput">
                 </div>
-               
+                <button id="submit-button" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
 
-
+    </div>
 {% endblock %}
 
 {% block head %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 {% endblock %}
 
+<script src="static/scripts.js"></script>   

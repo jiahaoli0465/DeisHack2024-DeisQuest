@@ -2,40 +2,33 @@
 
 {% block content %}
      <header>
-        <h1 class="bg-primary text-white text-center py-3">Rewards</h1>
+        <h1 class="bg-primary text-white text-center py-3">Benefits</h1>
         
     </header>
 
-    <div class="card mb-4" style="margin: 0px 0px 5px 5px">
-        <div class="card-body">
-            <h1>Reward 1:</h1>
-                <p>Guaranteed spot in the Brandeis International Business School Undegraduate Mentorship Program, where top performing undergraduate students gets mentored by a graduate students.</p>
+    <div  style="display:flex;flex-direction: row;">
+        <div class="card mb-4" style="margin: 0px 0px 5px 5px;flex:1">
+            <div class="card-body">
+                    <p>Guaranteed spot in the Brandeis International Business School Undegraduate Mentorship Program, where top performing undergraduate students gets mentored by a graduate students.</p>
+            </div>
+            <button class="claim btn btn-outline-primary text-dark float-end" style= "border-radius: 0 0 .25rem .25rem;">Claim</button>
         </div>
-        <button class="btn btn-outline-primary text-dark float-end" style= "border-radius: 0 0 .25rem .25rem;">Claim</button>
+
+        <div class="card mb-4" style="margin: 0px 0px 5px 5px; flex:1">
+            <div class="card-body">
+                <p>An invite to an exclusive networking event in Boston where companies like the Big 4 will be there on June 9th 2024 at 6-7pm</p>
+            </div>
+            <button class="claim btn btn-outline-primary text-dark float-end" style= "border-radius: 0 0 .25rem .25rem;">Claim</button>
+        </div>
+
+        <div class="card mb-4" style="margin: 0px 0px 5px 5px; flex:1">
+            <div class="card-body">
+                <p>An exclusive opportunity to attend a guest lecture about entrepeneurship by a famous startup CEO on March 14th January 2024 in the IBS. Limited to only 5 undergraduate students.</p>
+            </div>
+            <button class="claim btn btn-outline-primary text-dark float-end" style= "border-radius: 0 0 .25rem .25rem;">Claim</button>
+        </div>
     </div>
 
-    <div class="card mb-4" style="margin: 0px 0px 5px 5px">
-        <div class="card-body">
-            <h1>Reward 2:</h1>
-               <p>An invite to an exclusive networking event in Boston where companies like the Big 4 will be there on June 9th 2024 at 6-7pm</p>
-        </div>
-        <button class="btn btn-outline-primary text-dark float-end" style= "border-radius: 0 0 .25rem .25rem;">Claim</button>
-    </div>
-
-    <div class="card mb-4" style="margin: 0px 0px 5px 5px">
-        <div class="card-body">
-            <h1>Reward 3:</h1>
-            <p>An exclusive opportunity to attend a guest lecture about entrepeneurship by a famous startup CEO on March 14th January 2024 in the IBS. Limited to only 5 undergraduate students.</p>
-        </div>
-        <button class="btn btn-outline-primary text-dark float-end" style= "border-radius: 0 0 .25rem .25rem;">Claim</button>
-    </div>
-
-    <div class="card mb-4" style="margin: 0px 0px 5px 5px">
-        <div class="card-body">
-            <h1>Reward 4:</h1>
-                <p>Undergraduate students have the opportunity to spend a week in a Brandeis alumn startup office to gain insider and professional insight</p>
-        </div>
-        <button class="btn btn-outline-primary text-dark float-end" style= "border-radius: 0 0 .25rem .25rem;">Claim</button>
-    </div>
+    <script src="static/reward.js"></script>
 
 {% endblock %}
