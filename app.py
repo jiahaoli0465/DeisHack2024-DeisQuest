@@ -80,6 +80,11 @@ def settings():
 @login_required
 def settings_update():
     return render_template('users/settings.html')
+
+@app.route('/task', methods = ['GET'])
+@login_required
+def task_page():
+    return render_template('task.html')
     
 
 # ####### Newsletter ##########
