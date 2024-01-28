@@ -43,6 +43,44 @@ To get started with DeisQuest, follow these steps:
 - **Rewards Section:** Check out the rewards you can redeem with your points.
 - **Profile:** Manage your personal information and track your task completion history.
 
+## How We Built It
+
+DeisQuest was developed using a robust stack of technologies to ensure a smooth and engaging user experience. The core components include:
+
+- **Flask:** We utilized Flask for backend routing, taking advantage of its lightweight and efficient framework to handle user requests and server responses.
+- **Cookies:** User-specific data, such as the assistant thread ID and authentication details, are managed through cookies to maintain a seamless user experience across sessions.
+- **Jinja and Bootstrap:** The frontend is crafted with Jinja and Bootstrap, balancing aesthetics and functionality. This combination allowed us to create a user-friendly interface that is both responsive and intuitive.
+- **PostgreSQL:** For our database needs, we chose PostgreSQL. Its reliability and robust features support our complex data management requirements, ensuring secure and efficient data handling.
+
+## Challenges We Ran Into
+
+Developing DeisQuest within a limited timeframe posed several challenges:
+
+- **Time Constraints:** The biggest challenge was the time restriction. Crafting a fully-featured application in such a short period was ambitious.
+- **Feature Prioritization:** Deciding which features to prioritize for the minimal viable product (MVP) was critical. We aimed to showcase the core functionalities while ensuring a stable and user-friendly experience.
+- **Integration of Technologies:** Seamlessly integrating different technologies (Flask, PostgreSQL, Jinja, Bootstrap) within a tight schedule was a demanding task that required careful planning and execution.
+
+## Accomplishments That We're Proud Of
+
+- **Successful MVP Development:** We are proud of developing a functional MVP that not only meets the basic requirements but also includes features that we initially thought were beyond our scope for this phase.
+- **Effective Teamwork:** Our team's ability to collaborate efficiently and overcome challenges together was key to our success.
+- **Positive User Feedback:** Receiving encouraging feedback from initial users has been highly rewarding, affirming the value and potential of DeisQuest.
+
+## What We Learned
+
+- **Rapid Development Techniques:** We've gained invaluable experience in developing a product under time pressure, learning to prioritize features and make effective use of our resources.
+- **The Power of Collaboration:** This project underscored the importance of teamwork and communication in overcoming technical and logistical hurdles.
+- **User-Centric Design:** Focusing on the user experience from the start helped us create an application that is not only functional but also engaging and easy to use.
+
+## What's Next for DeisQuest
+
+Looking ahead, we have several exciting plans for DeisQuest:
+
+- **Feature Expansion:** We plan to expand the range of quests and rewards, enhancing the educational and gamified experience.
+- **Scalability Improvements:** Ensuring that DeisQuest can smoothly handle a growing number of users is a priority.
+- **Community Building:** We aim to foster a vibrant community of users who can contribute to and benefit from the platform.
+- **Partnerships and Collaborations:** Exploring partnerships with industry leaders and educational institutions to enrich the opportunities available on DeisQuest.
+- **Continuous Improvement:** Gathering user feedback and making iterative improvements to enhance the overall experience and value of DeisQuest.
 
 ## Support
 
