@@ -11,8 +11,8 @@ from flask_debugtoolbar import DebugToolbarExtension
 from sqlalchemy.exc import IntegrityError
 from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
 
-from forms import RegisterForm, LoginForm, EditWorkLog, NewExercise, NewWorkLog,NewWorkType
-from models import db, connect_db, User, Worklog, WorkoutType, Exercise, ExerciseSet, WorkoutExercise
+from forms import RegisterForm, LoginForm
+from models import db, connect_db, User
 
 # from assistant.assistant import assistantbot, client
 # app.register_blueprint(assistantbot)
@@ -70,9 +70,27 @@ def newsletter_page():
 def show_dashboard():
     worklogs = Worklog.query.filter_by(user_id=current_user.id).all()
     return render_template('users/dashboard.html', worklogs = worklogs)
+
+@app.route('/settings', methods = ['GET'])
+@login_required
+def settings():
+    return render_template('users/settings.html')
+
+@app.route('/settings/post', methods = ['POST'])
+@login_required
+def settings_update():
+    return render_template('users/settings.html')
     
 
+# ####### Newsletter ##########
+# @app.route('/newsletter/create', methods=['GET'])
+# @login_required
+# def create_newsletter_page():
+#     return render_template('create_newsletter')
 
+# @app.route('/newsletter/create', methods=['POST'])
+# @login_required
+# def create_newsletter():
 
 
 #####################################################

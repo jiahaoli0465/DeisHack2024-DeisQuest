@@ -15,18 +15,126 @@
                         <i class="fas fa-chart-area me-1"></i>
                         Current Tasks
                     </div>
+                    <div class="card-body">
+                        No current tasks. How about finding one?
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <i class="fas fa-chart-area me-1"></i>
+                        Area Chart Example
+                    </div>
                     <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <i class="fas fa-chart-area me-1"></i>
+                        Newsletter
+                    </div>
+                    <div class="card-body"> <div class="card mb-4" style="margin: 0px 0px 5px 5px;">
+                        <div class="card-body">
+                            <h4>Special Members Only Event!!!</h4>
+                         
+    
+                            <p>📅 Save the Date: Feburary 17th 2024</p>
+                            <p>📍 Location: Brandeis IBS Campus.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-4" style="margin: 0px 0px 5px 5px;">
+                        <div class="card-body">
+                            <h4>Talk by James Gordon</h4>
+
+                        </div>
+                    </div>
+                    <div class="card mb-4" style="margin: 0px 0px 5px 5px">
+                        <div class="card-body">
+                            <h4>Extra Special Live Special!</h4>
+
+                        </div>
+                    </div></div>
                 </div>
             </div>
             <div class="col-xl-6">
                 <div class="card mb-4">
                     <div class="card-header">
                         <i class="fas fa-chart-bar me-1"></i>
-                        Bar Chart Example
+                        Add a widget
                     </div>
                     <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
                 </div>
             </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-chart-bar me-1"></i>
+                Rankings
+            </div>
+            <div class="card-body">
+                <table id="rankingsTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Student Name</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Alex Johnson</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Emma Stone</td>
+                        <td>92</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Michael Brown</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Sarah Wilson</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Kevin Martinez</td>
+                        <td>83</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Olivia Davis</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>William Thompson</td>
+                        <td>78</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                    <tr>
+                        <td>8</td>
+                        <td>John Smith</td>
+                        <td>75</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Emily Johnson</td>
+                        <td>72</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
         </div>
 
         <!-- <div class="section" id="leftSection">
@@ -44,5 +152,7 @@
     
 {% block head %}
     <link rel="stylesheet" href="/static/home.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="static/ranking_chart.js"></script>
 {% endblock %}
 
