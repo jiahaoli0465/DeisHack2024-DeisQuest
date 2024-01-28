@@ -1,0 +1,40 @@
+.custom-list-group .list-group-item {
+    background-color: #f8f9fa; /* Light background for each item */
+    border: 1px solid #e0e0e0; /* Slight border for definition */
+    margin-bottom: 5px; /* Space between items */
+}
+
+.custom-link {
+    color: #007bff; /* Bootstrap primary color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.custom-link:hover {
+    color: #0056b3; /* Darker shade on hover for interaction feedback */
+    text-decoration: underline; /* Underline on hover for emphasis */
+}
+
+.card-header {
+    background-color: #3b3b3b; /* Bootstrap primary color for header */
+    color: white; /* White text for contrast */
+    font-size: 1.2rem; /* Slightly larger font for the header */
+}
+
+.bluish {
+    background-color: #484f70 !important; 
+
+}
+
+.norma {
+    background-color: #f8f9fa !important; 
+    color: rgb(34, 34, 34) !important;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+/* Additional styling for the canvas/chart if needed */
+#myAreaChart {
+    max-height: 200px; /* Control chart height */
+}

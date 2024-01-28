@@ -1,74 +1,95 @@
 {% extends 'base_copy.html' %}
 {% block content %}
 
-                <h1 class="mt-4">Newsletter</h1>
-                <!-- <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="\">Dashboard</a></li>
-                        <li class="breadcrumb-item active">Newsletter</li>
-                    </ol> -->
-                    
-                    <div style="display:flex; flex-wrap: wrap;">
-                        <div class="card mb-4" style="flex: 1 1 300px; margin-right: 5px;">
-                            <div class="card-body">
-                                <h1>Special Members Only Event!!!</h1>
-                             
-        
-                                <p>📅 Save the Date: Feburary 17th 2024</p>
-                                <p>📍 Location: Brandeis IBS Campus.</p>
-                                
-                                <p>Join us for a day of insightful keynote sessions, dynamic panel discussions, and interactive workshops led by industry trailblazers. Explore the latest trends, strategies, and technologies shaping the business landscape, and gain a competitive edge in today's fast-paced world of commerce.</p>
-        
-                                <p>🔍 Highlights Include:</p>
-                                <ul>
-                                    <li>Keynote addresses from top business leaders</li>
-                                    <li>Panel discussions on emerging industry trends</li>
-                                    <li>Hands-on workshops for practical skills development</li>
-                                    <li>Networking opportunities with professionals and peers</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card mb-4" style="flex: 1 1 300px; margin-right: 5px; margin-left: 5px;">
-                            <div class="card-body">
-                                <h1>Talk by James Gordon</h1>
-                                <p>📅 Save the Date: March 17th 2024</p>
-                                <p>📍 Location: Brandeis IBS Campus.</p>
-                                <p>🌐 Topic: "Navigating the Future: Trends and Strategies in Modern Business"</p>
-                                <ul>
-                                    <li>Insights into emerging business trends</li>
-                                    <li>Strategies for adapting to technological advancements</li>
-                                    <li>Practical tips for effective leadership in the digital age</li>
-                                    <li>Q&A session for personalized guidance</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card mb-4" style="flex: 1 1 300px; margin-left: 5px;">
-                            <div class="card-body">
-                                <h1>Alumni Networking Event</h1>
+<!-- <h1 class="mt-4 text-center">Newsletter</h1> -->
 
-                                <p>📅 Save the Date: March 17th 2024</p>
-                                <p>📍 Location: Brandeis IBS Campus.</p>
+<div class="container mt-4">
+    <h1 class="mt-4">Newsletter</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+        <li class="breadcrumb-item active">Newsletter</li>
+    </ol>
+    <div class="row">
+        <!-- Event 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header bg-primary text-white">
+                    Special Members Only Event!!!
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Save the Date: February 17th, 2024</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Location: Brandeis IBS Campus</h6>
+                    <p class="card-text">Join us for a day of insightful keynote sessions, dynamic panel discussions, and interactive workshops led by industry trailblazers.</p>
+                    <ul>
+                        <li>Keynote addresses from top business leaders</li>
+                        <li>Panel discussions on emerging industry trends</li>
+                        <li>Hands-on workshops for practical skills development</li>
+                        <li>Networking opportunities with professionals and peers</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <button id="submit-button-1" type="submit" class="btn btn-outline-primary w-100">Add Event</button>
+                </div>
+            </div>
+        </div>
 
-                                <p>💼 Unlock New Opportunities: Brush shoulders with successful alumni, explore potential career paths, and dive into industry-specific networking sessions. Your next big opportunity could be just one conversation away!</p>
+        <!-- Event 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header bg-success text-white">
+                    Talk by James Gordon
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Save the Date: March 17th, 2024</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Location: Brandeis IBS Campus</h6>
+                    <p class="card-text">Topic: "Navigating the Future: Trends and Strategies in Modern Business"</p>
+                    <ul>
+                        <li>Insights into emerging business trends</li>
+                        <li>Strategies for adapting to technological advancements</li>
+                        <li>Practical tips for effective leadership in the digital age</li>
+                        <li>Q&A session for personalized guidance</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <button id="submit-button-2" type="submit" class="btn btn-outline-success w-100">Add Event</button>
+                </div>
+            </div>
+        </div>
 
+        <!-- Event 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header bg-info text-white">
+                    Alumni Networking Event
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Save the Date: April 10th, 2024</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Location: Brandeis IBS Campus</h6>
+                    <p class="card-text">Unlock New Opportunities: Brush shoulders with successful alumni, explore potential career paths, and dive into industry-specific networking sessions.</p>
+                </div>
+                <div class="card-footer">
+                    <button id="submit-button-3" type="submit" class="btn btn-outline-info w-100">Add Event</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                            </div>
-                        </div>
-                    </div>
-
-                            <div class="card mb-4">
-                                <div class="card-body">
-                                    <h1>More Events</h1>
-                                    <ul>
-                                        <li>How to Network 101 led by IBS alumni</li>
-                                        <li>Economic Research Workshop</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-
+    <!-- More Events -->
+    <div class="card mb-4">
+        <div class="card-header bg-warning">
+            More Events
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>How to Network 101 led by IBS alumni</li>
+                <li>Economic Research Workshop</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
 
 {% block head %}
+<!-- Make sure to include Bootstrap CSS here if it's not already included in base_copy.html -->
 {% endblock %}
-

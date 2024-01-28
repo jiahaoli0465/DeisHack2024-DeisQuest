@@ -1,72 +1,90 @@
 {% extends 'base_copy.html' %}
 {% block content %}
 
-                <h1 class="mt-4">Your Quests</h1>
-                <!-- <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="\">Dashboard</a></li>
-                        <li class="breadcrumb-item active">Your Tasks</li>
-                    </ol> -->
-                    
-                    <!-- <div style="display:flex"> -->
+<div class="container mt-5">
+    <h1 class="text-center display-4 mb-5">Your Quests</h1>
 
-                        <div style="flex:1; padding-right:10px">
+    <div class="row mb-4">
+        <!-- Current Task Section -->
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-secondary text-white">
+                    Current Task
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Internship Quest</h5>
+                    <p class="card-text">Submit proof of applications to 25 internships weekly..</p>
+                    <!-- Additional task details can go here -->
+                    <button id="task-button" class="btn btn-outline-secondary w-100">View Task</button>
+                </div>
+            </div>
+        </div>
 
-                            <div class="card bg-primary text-white mb-4">
-                                <div class="card-body">Current Task</div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="/task">View Details</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </div>
-                            </div>
+        <!-- Urgent Info Section -->
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-danger text-white">
+                    Urgent Info
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Urgent Issue</h5>
+                    <p class="card-text">Good Job!! You don't have any current issue</p>
+                    <!-- Additional urgent info details can go here -->
+                    <button id="urgent-info-button" class="btn btn-outline-danger w-100">More Info</button>
+                </div>
+            </div>
+        </div>
 
-                                <div class="card bg-danger text-white mb-4">
-                                    <div class="card-body">Task Due Soon</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="/task">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                        </div>
-                        <!-- <div class="card bg-danger text-white mb-4">
-                            <div class="card-body">Task Due Soon</div>
-                            <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">View Details</a>
-                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                            </div>
-                        </div> -->
+    </div>
 
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h4 class="card-title">Completed Quests</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Attend IBS LinkedIn Profile Creation Event <i class="fas fa-check-circle text-success ml-2"></i></li>
+                    <li class="list-group-item">Attend Networking Workshop <i class="fas fa-check-circle text-success ml-2"></i></li>
+                    <!-- New sample items -->
+                    <li class="list-group-item">Participate in Global Business Challenge <i class="fas fa-check-circle text-success ml-2"></i></li>
+                    <li class="list-group-item">Complete Online Course: Introduction to Finance <i class="fas fa-check-circle text-success ml-2"></i></li>
+                    <li class="list-group-item">Volunteer at Community Charity Event <i class="fas fa-check-circle text-success ml-2"></i></li>
+                    <li class="list-group-item">Submit Article to Business School Magazine <i class="fas fa-check-circle text-success ml-2"></i></li>
+                    <li class="list-group-item">Attend Guest Lecture on Sustainability in Business <i class="fas fa-check-circle text-success ml-2"></i></li>
+                    <li class="list-group-item">Lead a Workshop on Entrepreneurship <i class="fas fa-check-circle text-success ml-2"></i></li>
+                    <li class="list-group-item">Join the Student Business Consulting Group <i class="fas fa-check-circle text-success ml-2"></i></li>
+                </ul>
+            </div>
+        </div>
+        
 
-                        <!-- <div class="card mb-4" style="flex:1">
-                            <div class="card-body">
-                                <h1>Completed</h1>
-                            </div>
-                        </div> -->
-                    <!-- </div> -->
-                    <div style="display: flex;">
-                        <div class="card mb-4" style="flex: 1;  margin-right: 10px;">
-                            <div class="card-body">
-                                <h1>Completed Quests</h1>
-                                <ul>
-                                    <li>Apply to 50 Internships</li>
-                                    <li>Attend IBS Linkedin Profile Creation event</li>
-                                    <li>Attend networking workshop</li>
-                                </ul>
-                            </div>
-                        </div>
-                    
-                        <div class="card mb-4" style="flex: 1;  margin-right: 10px;">
-                            <div class="card-body">
-                                <h1>Recommended Quests</h1>
-                                <ul>
-                                    <li>Attend Professor Smith's colloqium at the IBS on January 30th 2024 from 6-7pm</li>
-                                    <li>Attend IBS Resume Review Workshop at the IBS on January 31st 2024 from 6-7pm </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h4 class="card-title">Recommended Quests</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Attend Professor Smith's Colloquium at IBS (Jan 30th, 6-7 PM) <i class="fas fa-lightbulb ml-2"></i></li>
+                    <li class="list-group-item">Attend IBS Resume Review Workshop (Jan 31st, 6-7 PM) <i class="fas fa-lightbulb ml-2"></i></li>
+                    <!-- Additional recommended items -->
+                    <li class="list-group-item">Join the 'Future Leaders' Seminar Series (Feb 5th, 5-6 PM) <i class="fas fa-lightbulb ml-2"></i></li>
+                    <li class="list-group-item">Participate in the 'Innovate!' Business Idea Competition (Feb 10th, 1-3 PM) <i class="fas fa-lightbulb ml-2"></i></li>
+                    <li class="list-group-item">Enroll in the 'Effective Communication Skills' Workshop (Feb 15th, 4-5 PM) <i class="fas fa-lightbulb ml-2"></i></li>
+                    <li class="list-group-item">Attend the Annual Networking Gala (Feb 20th, 7-9 PM) <i class="fas fa-lightbulb ml-2"></i></li>
+                    <li class="list-group-item">Volunteer for the Community Outreach Program (Feb 25th, 10 AM-12 PM) <i class="fas fa-lightbulb ml-2"></i></li>
+                    <li class="list-group-item">Partake in the Leadership Skills Bootcamp (Mar 1st, 9 AM-4 PM) <i class="fas fa-lightbulb ml-2"></i></li>
+                    <li class="list-group-item">Register for the 'Global Markets' Webinar (Mar 5th, 8-9 PM) <i class="fas fa-lightbulb ml-2"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</div>
 
 {% endblock %}
 
 {% block head %}
+<link rel="stylesheet" href="path_to_your_custom_stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 {% endblock %}

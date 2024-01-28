@@ -1,7 +1,6 @@
 {% extends 'base_copy.html' %}
 {% block content %}
 
-
     <!-- <div class="pageHome"> -->
         <h1 class="mt-4">Dashboard</h1>
         <ol class="breadcrumb mb-4">
@@ -16,22 +15,22 @@
                         Current Tasks
                     </div>
                     <div class="card-body">
-                        <span>
-                            <ul class="list-group">
-                                <li class="list-group-item"><a href="/task" class="list-group-link custom-link">Apply to 25 internships (weekly) (3 pt)</a></li>
-                                <li class="list-group-item"><a href="/task" class="list-group-link custom-link">Attend Asper Center Pitch Summit (3/8/2024) (1 pt)</a></li>
-                                <li class="list-group-item"><a href="/event" class="list-group-link custom-link">Guest Speaker Series: International Business Trends (3/15/2024) (1 pt)</a></li>
-                                <li class="list-group-item"><a href="/event" class="list-group-link custom-link">Networking Event: Alumni Mixer (4/2/2024) (1 pt)</a></li>
-                                <li class="list-group-item"><a href="/event" class="list-group-link custom-link">Case Competition: Global Strategy Challenge (4/20/2024) (1 pt)</a></li>
-                            </ul>
-                        </span>
-                        
+                        <ul id="quests-list" class="list-group custom-list-group">
+                            <li class="list-group-item"><a href="/task" class="list-group-link custom-link">Apply to 25 internships (weekly) (3 pt)</a></li>
+                            <li class="list-group-item"><a href="/task" class="list-group-link custom-link">Attend Asper Center Pitch Summit (3/8/2024) (1 pt)</a></li>
+                            <li class="list-group-item"><a href="/event" class="list-group-link custom-link">Guest Speaker Series: International Business Trends (3/15/2024) (1 pt)</a></li>
+                            <li class="list-group-item"><a href="/event" class="list-group-link custom-link">Networking Event: Alumni Mixer (4/2/2024) (1 pt)</a></li>
+                            <li class="list-group-item"><a href="/event" class="list-group-link custom-link">Case Competition: Global Strategy Challenge (4/20/2024) (1 pt)</a></li>
+                        </ul>
                     </div>
+        
                     <div class="card-body">
                         <canvas id="myAreaChart" width="100%" height="40"></canvas> 
                     </div>
                 </div>
             </div>
+        <!-- </div> -->
+        
             <div class="col-xl-6">
                 <div class="card mb-4">
                     <div class="card-header">
@@ -126,67 +125,141 @@
         <div class="row">
             <div class="col-xl-6">
                 <div class="card mb-4">
-                    <div class="card-header">
+                    <div class="card-header norma">
                         <i class="fas fa-chart-area me-1"></i>
                         Newsletter
                     </div>
                     <div class="card-body"> <div class="card mb-4" style="margin: 0px 0px 5px 5px;">
                         <div class="card-body">
-                            <h4>Special Members Only Event!!!</h4>
-                         
+                            <div style="display: flex;flex-direction: row;">
+                                <div style="flex:3">
+                                    <h4>Special Members Only Event!!!</h4>
+                             
+        
+                                    <p>📅 Save the Date: Feburary 17th 2024</p>
+                                    <p>📍 Location: Brandeis IBS Campus.</p>
+                                </div>
+                                <div style="flex:1;display: flex;flex-direction: column;">                           
+                                    <button id="submit-button" type="submit" class="btn btn-primary" style="margin-bottom:20px">More Details</button>
+                                    <button id="submit-button" type="submit" class="add-event btn btn-primary">Add Event</button>
+                                </div>
     
-                            <p>📅 Save the Date: Feburary 17th 2024</p>
-                            <p>📍 Location: Brandeis IBS Campus.</p>
+                            </div>
                         </div>
+                        
                     </div>
                     <div class="card mb-4" style="margin: 0px 0px 5px 5px;">
                         <div class="card-body">
-                            <h4>Talk by James Gordon</h4>
+                            <div style="display: flex;flex-direction: row;">
+                                <div style="flex:3">
+                                    <h4>Talk by James Gordon</h4>
 
+                                    <p>March 17th 2024</p>
+                                    <p>Location: Brandeis IBS Campus.</p>
+                                </div>
+                                <div style="flex:1;display: flex;flex-direction: column;">                           
+                                    <button id="submit-button" type="submit" class="btn btn-primary" style="margin-bottom:20px">More Details</button>
+                                    <button id="submit-button" type="submit" class="add-event btn btn-primary">Add Event</button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                     <div class="card mb-4" style="margin: 0px 0px 5px 5px">
                         <div class="card-body">
-                            <h4>Extra Special Live Special!</h4>
+                            <div style="display: flex;flex-direction: row;">
+                                <div style="flex:3">
+                                    <h4>Extra Special Live Special!</h4>
 
+                                    <p>April 14th 2024</p>
+                                    <p>Location: Brandeis IBS Campus.</p>
+                                </div>
+                                <div style="flex:1;display: flex;flex-direction: column;">                           
+                                    <button id="submit-button" type="submit" class="btn btn-primary" style="margin-bottom:20px">More Details</button>
+                                    <button id="submit-button" type="submit" class="add-event btn btn-primary">Add Event</button>
+                                </div>
+
+                            </div>
                         </div>
                     </div></div>
                 </div>
             </div>
+            <!-- FILEPATH: /Users/jiahaoli/Desktop/DeisHack/templates/home.html -->
+            <!-- BEGIN: ed8c6549bwf9 -->
             <div class="col-xl-6">
                 <div class="card mb-4">
-                    <div class="card-header">
+                    <div class="card-header bluish">
                         <i class="fas fa-chart-bar me-1"></i>
-                        Add a widget
+                        Mentor assignments
                     </div>
-                    <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
+                    <div class="card-body">
+                        <span>
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="/event" class="list-group-link custom-link">Interview Prep Zoom Session</a></li>
+                                <li class="list-group-item"><a href="/event" class="list-group-link custom-link">Resume review Zoom</a></li>
+                                <li class="list-group-item"><a href="/event" class="list-group-link custom-link">Company research analysis</a></li>
+                            </ul>
+                        </span>
+
+                    </div>
                 </div>
+                <div class="card mb-4">
+                    <div class="card-header norma">
+                        <i class="fas fa-gift me-1"></i>
+                        Quick Rewards
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <b>Coffee Chat with Industry Leader</b> - Redeem 50 Points
+                                <button type="button" class="btn btn-primary btn-sm">Claim</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <b>Exclusive Workshop Pass</b> - Redeem 30 Points
+                                <button type="button" class="btn btn-primary btn-sm">Claim</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <b>Priority Access to Networking Events</b> - Redeem 40 Points
+                                <button type="button" class="btn btn-primary btn-sm">Claim</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <b>Feature in the Monthly Newsletter</b> - Redeem 25 Points
+                                <button type="button" class="btn btn-primary btn-sm">Claim</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <b>Business Book Bundle</b> - Redeem 60 Points
+                                <button type="button" class="btn btn-primary btn-sm">Claim</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                
+                                <b>One-on-One Career Counseling Session</b> - Redeem 70 Points
+                                <button type="button" class="btn btn-primary btn-sm">Claim</button>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
             </div>
-        </div>
-        <!-- <div class="card mb-4">
-            <div class="card-header">
-                <i class="fas fa-chart-bar me-1"></i>
-                Rankings
-            </div>
 
-        </div> -->
+            
 
-        <!-- <div class="section" id="leftSection">
-            <div id="activeTask"></div>
+            <!-- END: ed8c6549bwf9 -->
+
+
         </div>
 
-        <div class="section"  id="middleSection">
-        </div>
-        <div class="section"  id="rightSection">
-        </div> -->
-    <!-- </div> -->
+        <script src="static/home.js""></script>
+
 
 
 {% endblock %}
     
 {% block head %}
     <link rel="stylesheet" href="/static/home.css">
+    <link rel="stylesheet" href="/static/temp.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
     <script src="static/ranking_chart.js"></script>
+
 {% endblock %}
 

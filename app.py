@@ -47,7 +47,7 @@ def show_home():
 
 @app.route('/showflash', methods=['POST'])
 def show_flash():
-    flash("Task Submitted! Your task is under review, we will let you know when they are added to your profile.", "success")
+    flash("Task Submitted! Your task is under review, we will let you know when the points are added to your profile!", "success")
     return redirect('/')
 
 
