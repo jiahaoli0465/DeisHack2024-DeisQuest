@@ -10,7 +10,8 @@ window.addEventListener("DOMContentLoaded", ()=>{
         claim.addEventListener("click", ()=>{
             console.log("cloicked")
 
-            claim.setAttribute("style", "background-color:green")
+            claim.setAttribute("style", "background-color:green;color:white;")
+            claim.innerHTML = "Claimed!"
             claim.disabled = true;
         })
     }

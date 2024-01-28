@@ -15,7 +15,11 @@
                     <h5 class="card-title">Internship Quest</h5>
                     <p class="card-text">Submit proof of applications to 25 internships weekly..</p>
                     <!-- Additional task details can go here -->
-                    <button id="task-button" class="btn btn-outline-secondary w-100">View Task</button>
+                    <button id="task-button" class="btn btn-outline-secondary w-100" onclick="doTask()">View Task</button>
+                    <script>const doTask = () => {
+                        window.location.href = "/task";
+                    }
+                    </script>
                 </div>
             </div>
         </div>

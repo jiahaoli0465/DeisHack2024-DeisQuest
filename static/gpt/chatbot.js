@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const chatBtn = document.getElementById('chatBtn');
     const chatSection = document.getElementById('chatSection');
     const userId = chatSection.getAttribute('data-user-id');
-    // sendUserHistory();
+    sendUserHistory();
 
 
     const exitButton = document.querySelector('#chatHeader button');
@@ -129,20 +129,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function sendUserHistory(){
         const chatSection = document.getElementById('chatSection');
-        const userId = chatSection.getAttribute('data-user-id');
+        // const userId = chatSection.getAttribute('data-user-id');
     
-        if (userId == 0) {
-            console.log('no user found')
-            return;
-        }
-        const history = await axios.get(`/api/user/${userId}/worklogs`)
+        // if (userId == 0) {
+        //     console.log('no user found')
+        //     return;
+        // }
+        // const history = await axios.get(`/api/user/${userId}/worklogs`)
         
-        console.log(history.data);
+        // console.log(history.data);
+        const currentTask = `Apply to 25 internships (weekly) (3 pt)
+        Attend Asper Center Pitch Summit (3/8/2024) (1 pt)
+        Guest Speaker Series: International Business Trends (3/15/2024) (1 pt)
+        Networking Event: Alumni Mixer (4/2/2024) (1 pt)
+        Case Competition: Global Strategy Challenge (4/20/2024) (1 pt)`
         try {
             showLoader();
     
-            let guide = 'this is the server sending you the user history so you can help guide the user for further questions. Do not respond to this message, just keep it to be referenced';
-            const response = await axios.post('/chatbot/chat', { message: `${guide} ${JSON.stringify(history.data)}`});
+            let guide = 'this is the server sending you the data so you can help guide the user for further questions. When asked what task the user should do first, only suggest them to submit the proof of internship task';
+            const response = await axios.post('/chatbot/chat', { message: `guide: ${guide}. Message: ${currentTask}`});
             console.log(response.data);
             hideLoader();
     
