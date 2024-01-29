@@ -2,6 +2,8 @@
 
 DeisQuest is an innovative web application designed to transform the journey of exploring business education and career development into a gamified adventure. This platform combines real-world challenges, virtual networking, and a competitive ecosystem to engage students in an interactive learning experience. With DeisQuest, students' achievements in-app translate into tangible rewards and opportunities, bridging the gap between academic learning and practical career development.
 
+https://www.youtube.com/watch?v=zXxmoe6U9Ig&ab_channel=Lonji
+
 ## Features
 
 - **Gamified Learning and Exploration:** Embark on quests and challenges centered around business concepts, industry knowledge, and personal development tasks, designed to be both educational and entertaining.
