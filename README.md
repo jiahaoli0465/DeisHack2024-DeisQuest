@@ -1,4 +1,4 @@
-# DeisQuest
+# DeisQuest - Minimal Viable Product
 
 DeisQuest is an innovative web application designed to transform the journey of exploring business education and career development into a gamified adventure. This platform combines real-world challenges, virtual networking, and a competitive ecosystem to engage students in an interactive learning experience. With DeisQuest, students' achievements in-app translate into tangible rewards and opportunities, bridging the gap between academic learning and practical career development.
 
